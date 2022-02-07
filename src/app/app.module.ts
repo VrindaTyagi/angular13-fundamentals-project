@@ -14,6 +14,8 @@ import { CourseDetailsComponent } from './courses/course-details/course-details.
 import { AdminPayrollComponent } from './examples/child-routes/admin-payroll/admin-payroll.component';
 import { AdminVacationComponent } from './examples/child-routes/admin-vacation/admin-vacation.component';
 import { AdminComponent } from './examples/child-routes/admin.component';
+import { RouteParamsComponent } from './examples/route-params/route-params.component';
+import { ProtectedComponent } from './examples/protected/protected.component';
 
 @NgModule({
   imports: [
@@ -24,7 +26,7 @@ import { AdminComponent } from './examples/child-routes/admin.component';
     MaterialModule,
     HttpClientModule,
   ],
-  declarations: [AppComponent, HomeComponent, CoursesComponent, CoursesListComponent, CourseDetailsComponent, ExamplesComponent, AdminPayrollComponent, AdminVacationComponent, AdminComponent],
+  declarations: [AppComponent, HomeComponent, CoursesComponent, CoursesListComponent, CourseDetailsComponent, ExamplesComponent, AdminPayrollComponent, AdminVacationComponent, AdminComponent, RouteParamsComponent, ProtectedComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
