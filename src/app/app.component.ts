@@ -11,6 +11,6 @@ export class AppComponent {
     { path: '/home', icon: 'home', title: 'Home' },
     { path: '/courses', icon: 'view_list', title: 'Courses' },
   ];
-
+  examples = [{ path: '/examples/child', icon: 'face', title: 'Child Routes' }]; 
   constructor() {}
 }

@@ -19,11 +19,31 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side" opened class="app-sidenav">
     <nav>
-      <a mat-button class="nav-link"
-      *ngFor="let link of links"
-      [routerLink]="link.path" routerLinkActive="active">
-        <mat-icon>{{link.icon}}</mat-icon>
-        {{link.title}}
+      <a
+        mat-button
+        class="nav-link"
+        *ngFor="let link of links"
+        [routerLink]="link.path"
+        routerLinkActive="active"
+      >
+        <mat-icon>{{ link.icon }}</mat-icon>
+        {{ link.title }}
+      </a>
+    </nav>
+    <mat-divider></mat-divider>
+    <h4 mat-subheader>Examples</h4>
+    <nav>
+      <a
+        mat-button
+        class="nav-link"
+        *ngFor="let link of examples"
+        [routerLink]="link.path"
+        routerLinkActive="active"
+      >
+        <mat-icon>
+          {{ link.icon }}
+        </mat-icon>
+        {{ link.title }}
       </a>
     </nav>
   </mat-sidenav>
